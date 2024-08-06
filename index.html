@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Logo Example</title>
+</head>
+<body>
+    <img id="logo" src="https://c8.alamy.com/comp/RCNMG9/computer-mouse-logo-icon-vector-sign-design-element-RCNMG9.jpg" alt="Logo" 
+    onmouseover="changelogo();" onmouseout="reset();" width="150" height="150">
+
+    <script>
+        // Function to change the logo image on mouseover
+        function changelogo() {
+            // Get the logo element by its ID
+            var logo = document.getElementById("logo");
+            // Change the src attribute to the new image path
+            logo.src = "https://cdn3.vectorstock.com/i/1000x1000/54/72/mouse-logo-icon-vector-29765472.jpg";
+        }
+
+        // Function to reset the logo image on mouseout
+        function reset() {
+            // Get the logo element by its ID
+            var logo = document.getElementById("logo");
+            // Change the src attribute back to the original image path
+            logo.src = "https://c8.alamy.com/comp/RCNMG9/computer-mouse-logo-icon-vector-sign-design-element-RCNMG9.jpg";
+        }
+    </script>
+</body>
+</html>
